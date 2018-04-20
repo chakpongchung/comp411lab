@@ -1,0 +1,6 @@
+P2							      |	Warning in /afs/cs.unc.edu/home/sxunique/comp411lab/lab7/ex1.
+							      >	Warning in /afs/cs.unc.edu/home/sxunique/comp411lab/lab7/ex1.
+							      >	Warning in /afs/cs.unc.edu/home/sxunique/comp411lab/lab7/ex1.
+							      >	Warning in /afs/cs.unc.edu/home/sxunique/comp411lab/lab7/ex1.
+							      >
+							      >	P3
