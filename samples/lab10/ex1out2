@@ -1,0 +1,32 @@
+Enter initial values for registers $s0-$s7
+Enter a and b:
+495
+3
+Enter a and b:
+48620
+34
+Enter a and b:
+1287
+5
+Enter a and b:
+293930
+34
+Enter a and b:
+12376
+8
+Enter a and b:
+1001
+3
+Enter a and b:
+455
+2
+Enter a and b:
+Here are the final values of registers $s0-$s7
+1829
+37465
+383610
+27461
+572011
+37591
+436491
+38471867
