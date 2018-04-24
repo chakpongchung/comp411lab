@@ -1,0 +1,25 @@
+#!/bin/bash
+
+LABNO=4
+MYID=`id -un`
+MYHOME=/home/porter/comp411/$MYID
+DEST=$MYHOME/lab$LABNO
+LOGDIR=/home/porter/comp411/.log
+echo Work submitted on `date` > $LOGDIR/lab${LABNO}_${MYID}_$$
+
+echo ""
+
+mkdir -p $MYHOME || echo Error: Could not create folder $MYHOME...
+mkdir -p $DEST || echo Error: Could not create folder $DEST...
+cp -p ./ex1.c ./ex2.c $DEST && echo Your work was successfully submitted on `date` || echo Error in copying your work to $DEST...
+
+echo ""
+
+/home/porter/comp411/bin/selfchecklab$LABNO
+echo -e "\n\nIf there were any errors while compiling and running your programs,"
+echo -e "there should be error messages above.  If you don't see any error messages,"
+echo -e "then your programs compiled and ran correctly."
+
+echo -e "\nYour work has been submitted whether or not it passed the quick check.\n\n"
+
+exit 0

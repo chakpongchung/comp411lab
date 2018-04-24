@@ -1,0 +1,1 @@
+Enter 5 pairs of floats (one per line):			      |	Enter 5 pairs of floats (one per line:)

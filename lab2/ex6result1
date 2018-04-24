@@ -1,0 +1,58 @@
+Number ?
+1 is a power of two (0)
+Number ?
+2 is a power of two (1)
+Number ?
+3 is not a power of two, between 1 and 2
+Number ?
+4 is a power of two (2)
+Number ?
+5 is not a power of two, between 2 and 3
+Number ?
+6 is not a power of two, between 2 and 3
+Number ?
+7 is not a power of two, between 2 and 3
+Number ?
+8 is a power of two (3)
+Number ?
+9 is not a power of two, between 3 and 4
+Number ?
+10 is not a power of two, between 3 and 4
+Number ?
+15 is not a power of two, between 3 and 4
+Number ?
+20 is not a power of two, between 4 and 5
+Number ?
+21 is not a power of two, between 4 and 5
+Number ?
+25 is not a power of two, between 4 and 5
+Number ?
+28 is not a power of two, between 4 and 5
+Number ?
+30 is not a power of two, between 4 and 5
+Number ?
+32 is a power of two (5)
+Number ?
+64 is a power of two (6)
+Number ?
+100 is not a power of two, between 6 and 7
+Number ?
+512 is a power of two (9)
+Number ?
+1000 is not a power of two, between 9 and 10
+Number ?
+1024 is a power of two (10)
+Number ?
+2048 is a power of two (11)
+Number ?
+5000 is not a power of two, between 12 and 13
+Number ?
+65535 is not a power of two, between 15 and 16
+Number ?
+65536 is a power of two (16)
+Number ?
+100000 is not a power of two, between 16 and 17
+Number ?
+1000000 is not a power of two, between 19 and 20
+Number ?
+Done

@@ -1,0 +1,10 @@
+Enter 5 pairs of floats (one per line):
+Samples:
+1.00 1.00
+0.00 0.00
+2.00 2.10
+5.01 4.99
+10.00 10.00
+Mean of X is 3.60, Mean of Y is 3.62
+Standard deviation of X is 4.04, Standard deviation of Y is 4.03
+Correlation is 1.00

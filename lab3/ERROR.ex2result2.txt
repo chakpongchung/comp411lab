@@ -1,0 +1,7 @@
+							      >
+							      >	You typed:
+							      >	A string with 41 characters
+							      >		29 lower case letters
+							      >		0 upper case letters
+							      >		0 digits
+							      >		12 others

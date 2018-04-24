@@ -1,0 +1,7 @@
+							      >
+							      >	You typed:
+							      >	A string with 23 characters
+							      >		15 lower case letters
+							      >		2 upper case letters
+							      >		0 digits
+							      >		6 others
