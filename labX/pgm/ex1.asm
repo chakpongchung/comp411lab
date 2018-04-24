@@ -1,3 +1,12 @@
+# ------------------------------------------------------
+# Notes for this assignment:
+#
+# When using byte to store small numbers, remember to
+# 	use appropriate 'lb' instruction ('lb' and 'lbu')
+#
+# Remember to exit the program by calling 'syscall 10'!
+# ------------------------------------------------------
+
 .data 0x0
 	picture:	.space 4096
 	blur:		.space 4096
@@ -7,17 +16,6 @@
 	
 .text 0x3000
 main:
-
-	# ----------------------------
-	# Notes for this assignment:
-	#
-	# # When using byte to store small numbers,
-	# 	remember to use appropriate 'lb'
-	#	instruction ('lb' and 'lbu');
-	# # Remember to exit the program by calling
-	#	'syscall 10'!
-	# ----------------------------
-
 	# x -> $s0
 	# y -> $s1
 	# max -> $s2

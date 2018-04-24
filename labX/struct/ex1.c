@@ -5,38 +5,39 @@
  *    we need to use 'scanf' to remove the '\n' left 
  *    by each of the integer!
  *    
+ *  I'm even suspecting someone changed my code from
+ *    mergesort(0, n) to mergesort(0, n-1), I don't
+ *    even write 'n-1'! (I write 'n - 1')
 */
 
 #include <stdio.h>
 #include <string.h>
 
-typedef struct
-{
+struct record_struct {
     char name[20];
     int id;
-} record;
+};
+
+typedef struct record_struct record;
 
 void mergesort(int s, int t, record * w, record * r);
 int less(record a, record b);
 
-int main()
-{
+int main() {
     record working_space[50];
     record result[50];
     int n;
 
-    scanf("%d\n", &n);
+    scanf("%d ", &n);
 
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         fgets(result[i].name, 20, stdin);
-        scanf("%d\n", &result[i].id);
+        scanf("%d ", &result[i].id);
     }
 
-    mergesort(0, n-1, working_space, result);
+    mergesort(0, n, working_space, result);
 
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         printf("%s%d\n", result[i].name, result[i].id);
     }
 }
@@ -55,33 +56,16 @@ void mergesort(int s, int t, record * w, record * r)
     int pw = s;
 
     // printf("s = %d, m = %d, t = %d\n", s, m, t);
-    while (pi < m && pj < t)
-    {
-        // printf("pi = %d, pj = %d, pw = %d\n", pi, pj, pw);
-        // printf("r[pi]=%s%d\n, r[pj]=%s%d\n, less(pi, pj)=%d\n", 
-        //     r[pi].name, r[pi].id, r[pj].name, r[pj].id, less(r[pi], r[pj]));
-        if (less(r[pi], r[pj]))
-        {
+    while (pi < m && pj < t) {
+        if (less(r[pi], r[pj])) {
             w[pw++] = r[pi++];
-        }
-        else
-        {
+        } else {
             w[pw++] = r[pj++];
         }
     }
-    while (pi < m)
-    {
-        w[pw++] = r[pi++];
-    }
-    while (pj < t)
-    {
-        w[pw++] = r[pj++];
-    }
-
-    for (int i = s; i < t; i++)
-    {
-        r[i] = w[i];
-    }
+    while (pi < m) w[pw++] = r[pi++];
+    while (pj < t) w[pw++] = r[pj++];
+    for (int i = s; i < t; i++) r[i] = w[i];
 }
 
 int less(record a, record b)

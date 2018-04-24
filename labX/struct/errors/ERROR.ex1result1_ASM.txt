@@ -1,0 +1,42 @@
+1,6c1,4
+< Annamaria
+< 7
+< Celine
+< 3
+< Celine
+< 11
+---
+> Val
+> 57
+> Royal
+> 39
+9,10c7,8
+< Gilberto
+< 20
+---
+> Romeo
+> 9
+12a11,12
+> Annamaria
+> 7
+15,20c15,18
+< Romeo
+< 2
+< Romeo
+< 9
+< Royal
+< 39
+---
+> Celine
+> 3
+> Gilberto
+> 20
+23,24c21,25
+< Val
+< 57
+---
+> Celine
+> 11
+> Romeo
+> 2
+> 

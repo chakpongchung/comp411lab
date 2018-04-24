@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-void hanoi(int s, int d, int m, int n);
+// Move 'n' disks from 's' to 't', using 'm' as medium.
+void hanoi(int s, int t, int m, int n);
 
 int main()
 {
@@ -10,14 +11,14 @@ int main()
     hanoi(1, 3, 2, n);
 }
 
-void hanoi(int s, int d, int m, int n)
+void hanoi(int s, int t, int m, int n)
 {
     if (n == 1)
     {
-        printf("Move disk %d from Peg %d to Peg %d\n", n, s, d);
+        printf("Move disk %d from Peg %d to Peg %d\n", n, s, t);
         return;
     }
-    hanoi(s, m, d, n - 1);
-    printf("Move disk %d from Peg %d to Peg %d\n", n, s, d);
-    hanoi(m, d, s, n - 1);
+    hanoi(s, m, t, n - 1);
+    printf("Move disk %d from Peg %d to Peg %d\n", n, s, t);
+    hanoi(m, t, s, n - 1);
 }
