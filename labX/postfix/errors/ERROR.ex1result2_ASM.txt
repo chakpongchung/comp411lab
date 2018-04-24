@@ -1,0 +1,7 @@
+3c3,6
+< 1
+---
+> Error in /afs/cs.unc.edu/home/sxunique/comp411lab/labX/postfix/ex1.asm line 44: Runtime exception at 0x00003030: Cannot write directly to text segment!0x00003000
+> 
+> Processing terminated due to errors.
+> 

@@ -31,14 +31,14 @@ int main()
         fgets(postfix, 32, stdin);
         if (postfix[0] == '0') break;
         clear();
-        int p = 0, r, pt; // p for postion within postfix, pt for pop temp
+        int p = 0, r, temp; // p for postion within postfix
         do {
             // printf("r = %d\n", r = get_next(postfix, &p));
             switch (r = get_next(postfix, &p)) {
-                case -1: pt = pop(); push(pop() + pt); break;
-                case -2: pt = pop(); push(pop() - pt); break;
-                case -3: pt = pop(); push(pop() * pt); break;
-                case -4: pt = pop(); push(pop() / pt); break;
+                case -1: temp = pop(); push(pop() + temp); break;
+                case -2: temp = pop(); push(pop() - temp); break;
+                case -3: temp = pop(); push(pop() * temp); break;
+                case -4: temp = pop(); push(pop() / temp); break;
                 case -5: printf("%d\n", pop()); break;
                 default: push(r);
             }
@@ -50,7 +50,6 @@ int get_next(char * postfix, int * p) {
     // consumes leading spaces but not trailing spaces
     // -1 for +, -2 for -, -3 for *, -4 for /, and -5 for terminate.
     while (*p < strlen(postfix) && postfix[*p] == ' ') (*p)++;
-    if (*p == strlen(postfix)) return -5;
     switch (postfix[*p]) {
         case '+': (*p)++; return -1;
         case '-': (*p)++; return -2;
